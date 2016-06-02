@@ -1,0 +1,74 @@
+.notes {
+}
+.note {
+  vertical-align: top;
+  margin: 0 0 10px 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 170px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(204, 204, 204, .4);
+  background-color: #fff;
+}
+.note:hover {
+  box-shadow: 0 3px 5px rgba(204, 204, 204, 1);
+}
+.control-buttons button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  float: right;
+  border: 1px solid transparent;
+  /*vertical-align: middle;*/
+  /*text-align: center;*/
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.control-buttons button:hover {
+  border: 1px solid #BDD4DE;
+}
+.remove {
+
+}
+.edit {
+  font-size: 18px !important;
+}
+.edit--active {
+  background-color: #FF530D !important;
+}
+
+/* edit */
+.note textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #BDD4DE;
+  resize: none;
+}
+.edit-title {
+  font: 19px Ubuntu, sans-serif;
+  font-weight: bold;
+  height: 100px;
+}
+.edit-body {
+  font-size: 16px;
+  height: 200px;
+}
+
+/* Add note */
+.add-note {
+  composes: note;
+}
+.add-note h3 {
+  margin: 5px 0;
+}
+.add-note textarea {
+  padding: 5px;
+  font-size: 16px;
+}
+.submit-button {
+  composes: simple-button from '../sharedStyles.css';
+  float: right;
+}

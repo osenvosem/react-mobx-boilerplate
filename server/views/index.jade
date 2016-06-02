@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    each link in cssLinks
+      link(rel="stylesheet" type="text/css" href="#{link}")
+    title Document
+  body
+    #root!= reactRoot
+    each link in jsLinks
+      script(type="text/javascript" src="#{link}")
