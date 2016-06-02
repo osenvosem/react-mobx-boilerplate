@@ -1,5 +1,16 @@
-A small React + React router + MobX boilerplate.
+A small React + React Router + MobX boilerplate with small app example.
 
+### To start
+- `clone https://github.com/osenvosem/react-mobx-boilerplate`
+- `cd react-mobx-boilerplate`
+- `npm i`
+- `npm start`
+
+### Prepearing for production
+- `npm run build:all`
+- `npm run start:prod`
+
+### Scripts
 - `npm start`: start in development mode;
 - `npm start:prod`: start in production mode (only after build process);
 - `npm run build:all`: build server and client bundles for production;
