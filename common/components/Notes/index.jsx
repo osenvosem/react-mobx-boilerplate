@@ -85,6 +85,7 @@ class Note extends Component {
   }
 }
 
+@observer
 class AddNote extends Component {
   render() {
     return (
