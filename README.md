@@ -1,4 +1,4 @@
-A small React + React Router + MobX boilerplate with small app example.
+A small React + React Router + MobX boilerplate with a small example app.
 
 ### To start
 - `clone https://github.com/osenvosem/react-mobx-boilerplate`
