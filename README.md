@@ -4,11 +4,11 @@ A small React + React Router + MobX boilerplate with small app example.
 - `clone https://github.com/osenvosem/react-mobx-boilerplate`
 - `cd react-mobx-boilerplate`
 - `npm i`
-- `npm start`
+- `npm start`: development server on port 8080;
 
 ### Prepearing for production
 - `npm run build:all`
-- `npm run start:prod`
+- `npm run start:prod`: server on port 3000;
 
 ### Commands
 - `npm start`: start in development mode;
