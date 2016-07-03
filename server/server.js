@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'development') {
     proxy: {
       "/api/*": "http://127.0.0.1:3000"
     }
-  }).listen(8080, "localhost", () => { console.log('[WDS started]'); });
+  }).listen(8080, "localhost", () => { console.log('[WDS started on 8080]'); });
 }
 
 // Production
