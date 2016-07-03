@@ -1,9 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-
 var cssnext = require('postcss-cssnext');
 var postcssReporter = require('postcss-reporter');
-
 const babelConfig = require('../package').babelConfig.client;
 
 const SRC = path.resolve(__dirname, '../client');

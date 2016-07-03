@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const autoprefixer = require('autoprefixer');
+var cssnext = require('postcss-cssnext');
+var postcssReporter = require('postcss-reporter');
 const babelConfig = require('../package').babelConfig.client;
 
 const SRC = path.resolve(__dirname, '../client');
@@ -56,9 +57,14 @@ module.exports = {
       }
     }),
   ],
-  postcss: function() {
-    return [autoprefixer({ browsers: ['last 2 versions'] })];
-  },
+  postcss: () => [
+    cssnext({
+      browsers: ['last 2 versions', 'IE > 10'],
+    }),
+    postcssReporter({
+      clearMessages: true,
+    })
+  ],
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.css']
   }
