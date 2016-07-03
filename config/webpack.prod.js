@@ -45,10 +45,6 @@ module.exports = {
       filename: '[name].bundle.js',
     }),
     new ExtractTextPlugin("styles.bundle.css", { allChunks: true }),
-    new webpack.ContextReplacementPlugin(
-      /node_modules\/moment\/locale/, // resourceRegExp
-      /ru/ // newContentRegExp
-    ),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false

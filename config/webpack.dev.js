@@ -47,11 +47,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: '[name].bundle.js',
-    }),
-    new webpack.ContextReplacementPlugin(
-      /node_modules\/moment\/locale/, // resourceRegExp
-      /ru/ // newContentRegExp
-    ),
+    })
   ],
   postcss: function() {
     return [autoprefixer({ browsers: ['last 2 versions'] })];
