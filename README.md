@@ -1,11 +1,11 @@
 React + React Router + MobX boilerplate with a small example app.
 
 ### Features
-- ES6 on client and server
-- CSSNext and modules
-- Hot module reloading
-- Server side rendering
-- Build server bundle for production
+- ES6 on client and server;
+- CSSNext and modules;
+- Hot module reloading;
+- Server side rendering;
+- Build server bundle for production;
 
 ### To start
 - `clone https://github.com/osenvosem/react-mobx-boilerplate`
@@ -14,9 +14,7 @@ React + React Router + MobX boilerplate with a small example app.
 - `npm start` — development server on port 8080;
 
 ### Prepearing for production
-- `npm run build:all`
-- `npm run start:prod` — server on port 3000;
-- `npm run prod` — alias for build:all and start:prod
+- `npm run prod` — build all bundles and start in production mode;
 
 ### Commands
 - `npm start` — start in development mode;
@@ -24,6 +22,7 @@ React + React Router + MobX boilerplate with a small example app.
 - `npm run build:all` — build server and client bundles for production;
 - `npm run build:client` — build client bundles;
 - `npm run build:server` — build server bundle;
+- `npm run prod` — alias for build:all and start:prod
 - `npm run clear:builds` — delete all generated bundles;
 
 ### Structure
