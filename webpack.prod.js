@@ -1,9 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var cssnext = require('postcss-cssnext');
-var postcssReporter = require('postcss-reporter');
-const babelConfig = require('./package').babelConfig.client;
+const cssnext = require('postcss-cssnext');
+const postcssReporter = require('postcss-reporter');
+const config = require('./package').config;
+const babelConfig = require('./package').babelConfig;
 
 const SRC = path.resolve(__dirname, 'app');
 const BUILD = path.resolve(__dirname, 'server/public');
@@ -16,7 +17,7 @@ module.exports = {
   },
   output: {
     path: BUILD,
-    publicPath: '/assets/',
+    publicPath: config.assetsPublicPath,
     filename: '[name].bundle.js'
   },
   module: {
@@ -24,7 +25,7 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel',
-      query: babelConfig
+      query: babelConfig.client
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract(
