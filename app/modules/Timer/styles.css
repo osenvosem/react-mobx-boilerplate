@@ -1,0 +1,18 @@
+.label {
+  color: #2B3A42;
+}
+.counter {
+  color: #FF530D;
+}
+.inc-button {
+  composes: simple-button from '../sharedStyles.css';
+  color: #2B3A42;
+}
+.dec-button {
+  composes: simple-button from '../sharedStyles.css';
+  color: #2B3A42
+}
+.reset-button {
+  composes: simple-button from '../sharedStyles.css';
+  color: #2B3A42;
+}
