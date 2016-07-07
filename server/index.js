@@ -1,7 +1,16 @@
-const babelConfig = require('../package').babelConfig.server;
+var path = require('path');
+
+// To resolve shared folder during server development transpling
+var sharedFolder = require('babel-resolver')(
+  path.resolve(process.cwd(), 'app/shared')
+);
+
+let babelConfig = require('../package').babelConfig.server;
+babelConfig = Object.assign(babelConfig, { resolveModuleSource: sharedFolder });
+
 require('babel-register')(babelConfig);
 require('babel-polyfill');
 require('css-modules-require-hook')({
-  generateScopedName: () => '[name]__[local]--[hash:base64:5]'
+  generateScopedName: () => '[folder]__[local]--[hash:base64:5]'
 });
 require('./server.js');

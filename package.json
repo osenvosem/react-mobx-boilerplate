@@ -7,9 +7,10 @@
     "start": "NODE_ENV=development nodemon server/index.js -w server/",
     "start:prod": "NODE_ENV=production node server/server.bundle.js",
     "build:all": "npm run build:client && npm run build:server",
-    "build:client": "NODE_ENV=production webpack --config config/webpack.prod.js",
-    "build:server": "NODE_ENV=production webpack --config config/webpack.server.js",
-    "clean:builds": "rm server/public/main.bundle.js server/public/styles.bundle.css server/public/vendor.bundle.js server/server.bundle.js"
+    "build:client": "NODE_ENV=production webpack --config webpack.prod.js",
+    "build:server": "NODE_ENV=production webpack --config webpack.server.js",
+    "clear:builds": "rm server/public/main.bundle.js server/public/styles.bundle.css server/public/vendor.bundle.js server/server.bundle.js",
+    "prod": "npm run build:all && npm run start:prod"
   },
   "keywords": [
     "react",
@@ -28,6 +29,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
+    "babel-resolver": "0.0.18",
     "css-loader": "^0.23.1",
     "css-modules-require-hook": "^4.0.1",
     "extract-text-webpack-plugin": "^1.0.1",

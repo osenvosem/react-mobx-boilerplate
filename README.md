@@ -1,4 +1,11 @@
-A small React + React Router + MobX boilerplate with a small example app.
+React + React Router + MobX boilerplate with a small example app.
+
+### Features
+- ES6 on client and server
+- CSSNext and modules
+- Hot module reloading
+- Server side rendering
+- Build server bundle for production
 
 ### To start
 - `clone https://github.com/osenvosem/react-mobx-boilerplate`
@@ -16,4 +23,26 @@ A small React + React Router + MobX boilerplate with a small example app.
 - `npm run build:all` — build server and client bundles for production;
 - `npm run build:client` — build client bundles;
 - `npm run build:server` — build server bundle;
-- `npm run clean:builds` — delete all generated bundles;
+- `npm run clear:builds` — delete all generated bundles;
+
+### Structure
+```
+app
+├── client.js # client entry point
+├── modules # parts of an app
+│   ├── Notes
+│   │   ├── components
+│   │   │   ├── AddNote.js
+│   │   │   ├── Note.js
+│   │   │   └── NoteList.js
+│   │   ├── index.js # must export store
+│   │   ├── store.js # stores state and actions
+│   │   └── styles.css
+│   ├── index.js # gathering stores and passing it to component tree
+│   └── sharedStyles.css
+├── routes.js
+└── shared # shared folder available anywhere in the app
+    ├── components
+    │   └── Header
+    └── services
+```

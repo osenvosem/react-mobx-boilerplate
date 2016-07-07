@@ -1,9 +1,9 @@
 [{
   "id": 1,
-  "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-  "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquam voluptas voluptatem amet, illo eveniet. Magnam dolor dignissimos cupiditate voluptatibus sint inventore excepturi eos ipsa, eaque explicabo soluta, atque ex?"
+  "title": "Learn React",
+  "body": "I need to build my interface somehow. =\\"
 }, {
   "id": 2,
-  "title": "Lorem ipsum dolor sit amet.",
-  "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, blanditiis magnam impedit hic ipsam aliquid sit odit cumque quos voluptate incidunt praesentium voluptatum, minus earum a, saepe deleniti atque dicta."
+  "title": "Learn MobX",
+  "body": "I need to store my state somewhere."
 }]

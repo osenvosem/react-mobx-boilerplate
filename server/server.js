@@ -22,7 +22,7 @@ app.use('/api/', api);
 // Development
 import webpack from 'webpack';
 import webpackDevServer from 'webpack-dev-server';
-import webpackDevConfig from '../config/webpack.dev.js';
+import webpackDevConfig from '../webpack.dev.js';
 
 if (process.env.NODE_ENV === 'development') {
   new webpackDevServer(webpack(webpackDevConfig), {
@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'development') {
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
-import routes from '../common/router';
+import routes from '../app/routes';
 
 if (process.env.NODE_ENV === 'production') {
 
