@@ -28,7 +28,7 @@ import webpackDevConfig from '../webpack.dev.js';
 if (process.env.NODE_ENV === 'development') {
   new webpackDevServer(webpack(webpackDevConfig), {
     publicPath: config.assetsPublicPath,
-    contentBase: __dirname,
+    contentBase: path.resolve(__dirname, 'public'),
     inline: true,
     hot: true,
     historyApiFallback: true,
