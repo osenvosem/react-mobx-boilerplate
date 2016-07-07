@@ -16,6 +16,7 @@ React + React Router + MobX boilerplate with a small example app.
 ### Prepearing for production
 - `npm run build:all`
 - `npm run start:prod` — server on port 3000;
+- `npm run prod` — alias for build:all and start:prod
 
 ### Commands
 - `npm start` — start in development mode;
