@@ -16,7 +16,7 @@ React + React Router + MobX boilerplate with a small example app.
 ### Prepearing for production
 - `npm run prod` — build all bundles and start in production mode;
 
-### Commands
+### Command list
 - `npm start` — start in development mode;
 - `npm start:prod` — start in production mode (only after build process);
 - `npm run build:all` — build server and client bundles for production;
