@@ -61,6 +61,6 @@ module.exports = {
     root: [
       path.resolve(process.cwd(), 'app/shared')
     ],
-    extensions: ['', '.js', '.jsx', '.json', '.css']
+    extensions: ['', '.js', '.jsx']
   }
 }

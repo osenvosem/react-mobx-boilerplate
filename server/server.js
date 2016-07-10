@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
 import uniRouter from './middleware/uniRouter';
-import { config } from '../package';
+import { config } from '../package.json';
 
 const app = express();
 app.listen(3000);
@@ -21,11 +21,11 @@ import api from './api/';
 app.use('/api/', api);
 
 // Development
-import webpack from 'webpack';
-import webpackDevServer from 'webpack-dev-server';
-import webpackDevConfig from '../webpack.dev.js';
-
 if (process.env.NODE_ENV === 'development') {
+  const webpack = require('webpack');
+  const webpackDevServer = require('webpack-dev-server');
+  const webpackDevConfig = require('../webpack.dev.js');
+
   new webpackDevServer(webpack(webpackDevConfig), {
     publicPath: config.assetsPublicPath,
     contentBase: path.resolve(__dirname, 'public'),

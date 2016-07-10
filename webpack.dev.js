@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import cssnext from 'postcss-cssnext';
 import postcssReporter from 'postcss-reporter';
-import { config, babelConfig } from './package';
+import { config, babelConfig } from './package.json';
 
 const SRC = path.resolve(__dirname, 'app');
 const BUILD = path.resolve(__dirname, 'server/public');
@@ -64,6 +64,6 @@ module.exports = {
     root: [
       path.resolve(process.cwd(), 'app/shared')
     ],
-    extensions: ['', '.js', '.jsx', '.json', '.css']
+    extensions: ['', '.js', '.jsx']
   }
 }

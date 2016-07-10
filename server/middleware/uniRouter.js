@@ -3,7 +3,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 import routes from '../../app/routes';
-import { config } from '../../package';
+import { config } from '../../package.json';
 
   // javascript links
 const jsLinks = [
