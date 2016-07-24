@@ -1,13 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const cssnext = require('postcss-cssnext');
-const postcssReporter = require('postcss-reporter');
-const config = require('./package').config;
-const babelConfig = require('./package').babelConfig;
+var path = require('path');
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var cssnext = require('postcss-cssnext');
+var postcssReporter = require('postcss-reporter');
+var config = require('./package').config;
+var babelConfig = require('./package').babelConfig;
 
-const SRC = path.resolve(__dirname, 'app');
-const BUILD = path.resolve(__dirname, 'server/public');
+var SRC = path.resolve(__dirname, 'app');
+var BUILD = path.resolve(__dirname, 'server/public');
 
 module.exports = {
   context: SRC,

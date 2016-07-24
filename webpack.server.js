@@ -1,11 +1,11 @@
-const path = require('path');
-const fs = require('fs');
+var path = require('path');
+var fs = require('fs');
 var cssnext = require('postcss-cssnext');
 var postcssReporter = require('postcss-reporter');
-const webpack = require('webpack');
-const babelConfig = require('./package').babelConfig.server;
+var webpack = require('webpack');
+var babelConfig = require('./package').babelConfig.server;
 
-const DIR = path.resolve(__dirname, 'server');
+var DIR = path.resolve(__dirname, 'server');
 
 module.exports = {
   context: DIR,
