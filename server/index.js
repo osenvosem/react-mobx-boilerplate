@@ -5,7 +5,7 @@ var sharedFolder = require('babel-resolver')(
   path.resolve(process.cwd(), 'app/shared')
 );
 
-let babelConfig = require('../package').babelConfig.server;
+var babelConfig = require('../package').babelConfig.server;
 babelConfig = Object.assign(babelConfig, { resolveModuleSource: sharedFolder });
 
 require('babel-register')(babelConfig);
