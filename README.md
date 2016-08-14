@@ -4,7 +4,6 @@ React + React Router + MobX boilerplate with a small example app.
 - ES6 on client and server;
 - CSSNext and modules;
 - Hot module reloading;
-- Server side rendering;
 - Build server bundle for production;
 
 ### To start
